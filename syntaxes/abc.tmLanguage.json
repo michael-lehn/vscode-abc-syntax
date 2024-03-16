@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.abc",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(assert|goto|label|const|fn|return|global|local|extern|for|while|do|if|else|then|array|of|sizeof|nullptr|struct|union|type|cast|break|continue|switch|case|default|enum)\\b"
 			}]
 		},
 		"strings": {
