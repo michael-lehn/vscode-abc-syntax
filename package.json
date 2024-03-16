@@ -1,7 +1,7 @@
 {
   "name": "abc-lang",
   "displayName": "abc-lang",
-  "description": "A Better C",
+  "description": "Syntax highlight for ABC (A Better C)",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.87.0"
