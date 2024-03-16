@@ -1,0 +1,25 @@
+{
+  "name": "abc",
+  "displayName": "abc",
+  "description": "A Better C",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "abc",
+      "aliases": ["ABC", "abc"],
+      "extensions": [".abc",".hdr"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "abc",
+      "scopeName": "source.abc",
+      "path": "./syntaxes/abc.tmLanguage.json"
+    }]
+  }
+}
