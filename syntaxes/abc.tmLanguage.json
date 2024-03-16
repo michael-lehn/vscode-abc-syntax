@@ -3,6 +3,18 @@
 	"name": "ABC",
 	"patterns": [
 		{
+			"include": "#comment_line"
+		},
+		{
+			"include": "#comment_block"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#integers"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -10,6 +22,28 @@
 		}
 	],
 	"repository": {
+		"comment_line": {
+			"name": "comment.line",
+			"begin": "//",
+			"end": "$"
+		},
+		"comment_block": {
+			"name": "comment.block",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		"types": {
+			"patterns": [{
+				"name": "entity.name.type",
+				"match": "\\b(void|bool|char|long|size_t|ptrdiff_t|int|i8|i16|i32|i64|u8|u16|u32|u64)\\b"
+			}]
+		},
+		"integers": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "\\b[+-]?\\d+\\b"
+			}]
+		},
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.abc",

@@ -1,6 +1,6 @@
 {
-  "name": "abc",
-  "displayName": "abc",
+  "name": "abc-lang",
+  "displayName": "abc-lang",
   "description": "A Better C",
   "version": "0.0.1",
   "engines": {
